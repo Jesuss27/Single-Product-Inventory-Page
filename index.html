@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>DailyUI #12 Single Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="side-nav">
-            <div class="hamburger">
+            <div  id="desktop" class="hamburger">
                 <div class="line-1"></div>
                 <div class="line-2"></div>
             </div>
@@ -34,7 +37,7 @@
         </div>
 
         <div class="top-nav">
-            <div class="branding"></div>
+            
             <div class="nav-list">
                 <ul class="desktop-icons">
                     <li class="search">
@@ -55,20 +58,38 @@
                         </svg> 
                     </li>
                 </ul>
+                <div  id="mobile" class="hamburger">
+                    <div id="line" class="line-1"></div>
+                    <div id="line" class="line-2"></div>
+                </div>
                 <ul class="mobile-links">
-                    <li class="search"></li>
-                    <li class="cart"></li>
-                    <li class="account"></li>
+                    <li class="search">Search</li>
+                    <li class="cart">Cart</li>
+                    <li class="account">Account</li>
                 </ul>
             </div>
+            <div class="branding">KORS</div>
         </div>
+
+    <div class="body-wrapper">
+
+       
 
         <div class="col-1">
             <div class="product-img"></div>
         </div>
 
         <div class="col-2">
-            <div class="rating"></div>
+            <div class="rating"><svg xmlns="http://www.w3.org/2000/svg" width="221.608" height="26.614" viewBox="0 0 221.608 26.614">
+                <g id="Group_56" data-name="Group 56" transform="translate(-603.999 -94.73)">
+                  <path id="Icon_ionic-ios-star" data-name="Icon ionic-ios-star" d="M28.787,12.241H19.73L16.978,4.028a1,1,0,0,0-1.872,0l-2.752,8.214H3.235a.988.988,0,0,0-.985.985.724.724,0,0,0,.018.166.947.947,0,0,0,.413.7l7.444,5.246L7.268,27.64a.988.988,0,0,0,.339,1.108.953.953,0,0,0,.554.24,1.207,1.207,0,0,0,.616-.222l7.265-5.178,7.265,5.178a1.154,1.154,0,0,0,.616.222.885.885,0,0,0,.548-.24.976.976,0,0,0,.339-1.108l-2.857-8.306,7.382-5.3.179-.154a1.033,1.033,0,0,0,.32-.659A1.043,1.043,0,0,0,28.787,12.241Z" transform="translate(601.749 91.855)" fill="#cc9f0a"/>
+                  <path id="Icon_ionic-ios-star-2" data-name="Icon ionic-ios-star" d="M28.787,12.241H19.73L16.978,4.028a1,1,0,0,0-1.872,0l-2.752,8.214H3.235a.988.988,0,0,0-.985.985.724.724,0,0,0,.018.166.947.947,0,0,0,.413.7l7.444,5.246L7.268,27.64a.988.988,0,0,0,.339,1.108.953.953,0,0,0,.554.24,1.207,1.207,0,0,0,.616-.222l7.265-5.178,7.265,5.178a1.154,1.154,0,0,0,.616.222.885.885,0,0,0,.548-.24.976.976,0,0,0,.339-1.108l-2.857-8.306,7.382-5.3.179-.154a1.033,1.033,0,0,0,.32-.659A1.043,1.043,0,0,0,28.787,12.241Z" transform="translate(650.13 91.855)" fill="#cc9f0a"/>
+                  <path id="Icon_ionic-ios-star-3" data-name="Icon ionic-ios-star" d="M28.787,12.241H19.73L16.978,4.028a1,1,0,0,0-1.872,0l-2.752,8.214H3.235a.988.988,0,0,0-.985.985.724.724,0,0,0,.018.166.947.947,0,0,0,.413.7l7.444,5.246L7.268,27.64a.988.988,0,0,0,.339,1.108.953.953,0,0,0,.554.24,1.207,1.207,0,0,0,.616-.222l7.265-5.178,7.265,5.178a1.154,1.154,0,0,0,.616.222.885.885,0,0,0,.548-.24.976.976,0,0,0,.339-1.108l-2.857-8.306,7.382-5.3.179-.154a1.033,1.033,0,0,0,.32-.659A1.043,1.043,0,0,0,28.787,12.241Z" transform="translate(698.511 91.855)" fill="#cc9f0a"/>
+                  <path id="Icon_ionic-ios-star-4" data-name="Icon ionic-ios-star" d="M28.787,12.241H19.73L16.978,4.028a1,1,0,0,0-1.872,0l-2.752,8.214H3.235a.988.988,0,0,0-.985.985.724.724,0,0,0,.018.166.947.947,0,0,0,.413.7l7.444,5.246L7.268,27.64a.988.988,0,0,0,.339,1.108.953.953,0,0,0,.554.24,1.207,1.207,0,0,0,.616-.222l7.265-5.178,7.265,5.178a1.154,1.154,0,0,0,.616.222.885.885,0,0,0,.548-.24.976.976,0,0,0,.339-1.108l-2.857-8.306,7.382-5.3.179-.154a1.033,1.033,0,0,0,.32-.659A1.043,1.043,0,0,0,28.787,12.241Z" transform="translate(746.893 91.855)" fill="#cc9f0a"/>
+                  <path id="Icon_ionic-ios-star-5" data-name="Icon ionic-ios-star" d="M28.787,12.241H19.73L16.978,4.028a1,1,0,0,0-1.872,0l-2.752,8.214H3.235a.988.988,0,0,0-.985.985.724.724,0,0,0,.018.166.947.947,0,0,0,.413.7l7.444,5.246L7.268,27.64a.988.988,0,0,0,.339,1.108.953.953,0,0,0,.554.24,1.207,1.207,0,0,0,.616-.222l7.265-5.178,7.265,5.178a1.154,1.154,0,0,0,.616.222.885.885,0,0,0,.548-.24.976.976,0,0,0,.339-1.108l-2.857-8.306,7.382-5.3.179-.154a1.033,1.033,0,0,0,.32-.659A1.043,1.043,0,0,0,28.787,12.241Z" transform="translate(795.273 91.855)" fill="none" stroke="#202a48" stroke-width="1"/>
+                </g>
+              </svg>
+              </div>
             <h2>Oversized Brecken Logo and Gold-Tone Watch</h2>
             <h5>Style# MK8849</h5>
             <h3 class="price"></h3>
@@ -89,9 +110,12 @@
             </div>
             <button class="cart-btn">Add to cart</button>
         </div>
+    </div>
 
 
     </div>
+
+    <script src="app.js"></script>
     
 </body>
 </html>
