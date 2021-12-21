@@ -11,11 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="skew-wrapper"></div>
     <div class="container">
         <div class="side-nav">
-            <div  id="desktop" class="hamburger">
-                <div class="line-1"></div>
-                <div class="line-2"></div>
+            <div  id="desktop" class="desktop-hamburger">
+                <div id="line" class="line-1"></div>
+                <div id="line" class="line-2"></div>
             </div>
             <div class="social-icons">
                 <div class="twitter">
@@ -37,6 +38,7 @@
         </div>
 
         <div class="top-nav">
+            <div class="desktop-branding"><h2>Michael Kors</h2></div>
             
             <div class="nav-list">
                 <ul class="desktop-icons">
@@ -58,7 +60,7 @@
                         </svg> 
                     </li>
                 </ul>
-                <div  id="mobile" class="hamburger">
+                <div  id="mobile" class="mobile-hamburger">
                     <div id="line" class="line-1"></div>
                     <div id="line" class="line-2"></div>
                 </div>
@@ -70,13 +72,12 @@
             </div>
             <div class="branding">KORS</div>
         </div>
-
+<div class="body-container">
     <div class="body-wrapper">
-
-       
-
         <div class="col-1">
-            <div class="product-img"></div>
+            <div class="product-img">
+               <img src="./images/Single-Product-Watch.png" alt="">
+            </div>
         </div>
 
         <div class="col-2">
@@ -92,28 +93,45 @@
               </div>
             <h2>Oversized Brecken Logo and Gold-Tone Watch</h2>
             <h5>Style# MK8849</h5>
-            <h3 class="price"></h3>
-            <h5>Style# MK8849</h5>
+            <h3 class="price">$145.00</h3>
+            <h5>Color</h5>
             <div class="radio-wrapper">
-                <label for="product-color"></label>
-                <input class="brown" id="product-color" type="radio">
-                <input class="dark-blue" id="product-color" type="radio">
-                <input class="light-blue" id="product-color" type="radio">
+                <label for="product-color-brown" class="radio">
+                    <input type="radio" name="product-color" id="product-color-brown" class="radio-btn">
+                    <div class="brown btn"></div>
+                </label>
+                <label for="product-color-dark-blue" class="radio">
+                    <input type="radio" name="product-color" id="product-color-dark-blue" class="radio-btn">
+                    <div class="dark-blue btn"></div>
+                </label>
+                <label for="product-color-light-blue" class="radio">
+                    <input type="radio" name="product-color" id="product-color-light-blue" class="radio-btn">
+                    <div class="light-blue btn"></div>
+                </label>
+                
             </div>
-            <div class="quantity-select-wrapper">
-                <label for="quantity-select">Quantity</label>
-                <select name="quantity-select" id="quantity-select"></select>
-            </div>
+            <label for="quantity-select" class="quantity-select-wrapper">
+                <h4>Quantity</h4>
+                <select name="quantity-select" id="quantity-select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="2">3</option>
+                </select>
+            </label>
+
             <div class="favorite-wrapper">
-                <div class="heart-icon"></div>
+                <div class="heart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30.25" height="29.241" viewBox="0 0 30.25 29.241">
+                        <path id="Icon_ionic-ios-heart" data-name="Icon ionic-ios-heart" d="M24.75,3.938h-.07A8,8,0,0,0,18,7.594a8,8,0,0,0-6.68-3.656h-.07a7.949,7.949,0,0,0-7.875,7.945,17.115,17.115,0,0,0,3.361,9.33C10.969,27,18,32.063,18,32.063S25.031,27,29.264,21.213a17.115,17.115,0,0,0,3.361-9.33A7.949,7.949,0,0,0,24.75,3.938Z" transform="translate(-2.875 -3.438)" fill="none" stroke="#000" stroke-width="1"/>
+                      </svg>     
+                </div>
                 <p>Add to favorites</p>
             </div>
-            <button class="cart-btn">Add to cart</button>
+            <button class="cart-btn"><p>Add to cart</p></button>
         </div>
     </div>
-
-
     </div>
+</div>
 
     <script src="app.js"></script>
     
